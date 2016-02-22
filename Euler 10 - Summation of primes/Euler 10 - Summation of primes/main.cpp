@@ -1,4 +1,5 @@
 #include <iostream>
+#include <ctime>
 
 bool isPrime(long int n)
 {
@@ -14,6 +15,7 @@ bool isPrime(long int n)
 
 int main()
 {
+	int start_s = clock();
 	long long int sum = 2;
 	for (long int i = 3; i < 2000000; i += 2)
 	{
@@ -22,6 +24,8 @@ int main()
 			sum += i;
 		}
 	}
-	std::cout << sum;
+	std::cout << sum << std::endl;
+	int stop_s = clock();
+	std::cout << "time: " << (stop_s - start_s) / double(CLOCKS_PER_SEC) * 1000 << std::endl;
 	while(1);
 }
