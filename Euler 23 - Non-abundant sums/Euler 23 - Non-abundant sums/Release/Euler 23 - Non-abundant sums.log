@@ -1,0 +1,6 @@
+﻿  main.cpp
+main.cpp(8): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  Generating code
+  All 13 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Euler 23 - Non-abundant sums.vcxproj -> C:\Users\Taylor\Documents\GitHub\Project Euler\Euler 23 - Non-abundant sums\Release\Euler 23 - Non-abundant sums.exe

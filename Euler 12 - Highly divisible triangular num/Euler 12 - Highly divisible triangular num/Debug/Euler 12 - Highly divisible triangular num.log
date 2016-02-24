@@ -1,4 +1,4 @@
 ﻿  main.cpp
-c:\users\taylor\documents\github\project euler\euler 12 - highly divisible triangular num\euler 12 - highly divisible triangular num\main.cpp(7): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-c:\users\taylor\documents\github\project euler\euler 12 - highly divisible triangular num\euler 12 - highly divisible triangular num\main.cpp(30): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+c:\users\taylor\documents\github\project euler\euler 12 - highly divisible triangular num\euler 12 - highly divisible triangular num\main.cpp(8): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\taylor\documents\github\project euler\euler 12 - highly divisible triangular num\euler 12 - highly divisible triangular num\main.cpp(31): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
   Euler 12 - Highly divisible triangular num.vcxproj -> C:\Users\Taylor\Documents\GitHub\Project Euler\Euler 12 - Highly divisible triangular num\Debug\Euler 12 - Highly divisible triangular num.exe
