@@ -8,12 +8,12 @@ int sumOfDivisors(int n)
 		return 0;
 	int sqrtN = ceil(sqrt(n));
 	int sum = 1;
-	for (int i = 2; i < sqrtN; ++i)
+	for (int i = 2; i < n; ++i)
 	{
 		if (n%i == 0)
 		{
 			sum += i;
-			sum += n / i;
+			//sum += n / i;
 		}
 	}
 	return sum;
@@ -36,23 +36,37 @@ int main()
 		abundant[i] = isAbundant(i);
 	}
 
-	int sum = 0;
+	bool madeOfAbundant[count];
+	for (int i = 0; i < count; ++i) { madeOfAbundant[i] = false; }
 
-	for (int n = 1; n < count; ++n)
+	for (int i = 0; i <= count/2; ++i)
 	{
-		bool isSum = false;
-		for (int i = 0; i <= n/2 && isSum == false; ++i)
+		if (abundant[i])
 		{
-			if (abundant[i] && abundant[n-i])
+			for (int j = i; j <= count; ++j)
 			{
-				isSum = true;
-				std::cout << n << " : " << i << "+" << n-i << std::endl;
+				if (madeOfAbundant[i + j] == false)
+				{
+					if (abundant[j])
+					{
+						madeOfAbundant[i + j] = true;
+						//std::cout << i + j << std::endl;
+					}
+				}
+				if (i + j > count)
+				{
+					break;
+				}
 			}
 		}
-		if (isSum == true)
+	}
+	int sum = 0;
+	for (int i = 0; i < count; ++i)
+	{
+		if (madeOfAbundant[i] == false)
 		{
-			//std::cout << n << std::endl;
-			sum += n;
+			//std::cout << i << std::endl;
+			sum += i;
 		}
 	}
 	
